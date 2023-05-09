@@ -31,7 +31,7 @@ class BookShelf implements SelfIterable
         return $this->last;
     }
 
-    public function iterator(): BookShelfIterator
+    public function iterator(): SelfIterator
     {
         return new BookShelfIterator($this);
     }

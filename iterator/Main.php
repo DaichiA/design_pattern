@@ -1,5 +1,8 @@
 <?php
 
+// イテレーターパターンの利点は、BookShelfクラスとBookShelfIteratorクラスの間に依存関係がないこと。
+// お互いに協調して動作することができる。
+
 require_once __DIR__ . '/Book.php';
 require_once __DIR__ . '/BookShelf.php';
 require_once __DIR__ . '/BookShelfAggregate.php';
