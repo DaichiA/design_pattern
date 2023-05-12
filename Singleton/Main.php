@@ -1,5 +1,7 @@
 <?php
 
+// Singletonパターンはインスタンスが1つしか存在しないことを保証するパターン
+
 namespace DesignPattern\Singleton;
 
 use DesignPattern\Singleton\Singleton;
