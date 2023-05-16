@@ -8,9 +8,9 @@ class Manager
 {
     private array $showcase = [];
 
-    public function register(string $name, Product $prototype): void
+    public function register(string $prototype_name, Product $prototype): void
     {
-        $this->showcase[$name] = $prototype;
+        $this->showcase[$prototype_name] = $prototype;
     }
 
     public function create(string $prototype_name): Product
