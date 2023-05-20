@@ -1,10 +1,14 @@
 <?php
 
+// Abstract Factoryパターンは関連する一連のオブジェクトを生成するためのインタフェースを提供する。
+// 具体的なオブジェクトのクラスを指定せずに、関連するオブジェクトを生成するための抽象的な方法を提供する。
+// はじめに具体的な工場を登録し、続いて部品を作っていく。
+
 namespace DesignPattern\AbstractFactory;
 
 use DesignPattern\AbstractFactory\Factory\Factory;
 
-require_once __DIR__ . '/factory/Factory.php';
+require_once __DIR__ . '/Factory/Factory.php';
 
 class Main
 {
@@ -50,4 +54,4 @@ class Main
     }
 }
 
-Main::main(['file_nameaaa', 'ListFactory']);
+Main::main(['file_nameaaa', 'DesignPattern\AbstractFactory\ListFactory\ListFactory']);

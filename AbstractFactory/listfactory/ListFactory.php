@@ -2,14 +2,15 @@
 
 namespace DesignPattern\AbstractFactory\ListFactory;
 
+require_once __DIR__ . '/ListLink.php';
+require_once __DIR__ . '/ListTray.php';
+require_once __DIR__ . '/ListPage.php';
+
 use DesignPattern\AbstractFactory\Factory\Factory;
 use DesignPattern\AbstractFactory\Factory\Link;
 use DesignPattern\AbstractFactory\Factory\Tray;
 use DesignPattern\AbstractFactory\Factory\Page;
 
-require_once __DIR__ . '/ListLink.php';
-require_once __DIR__ . '/ListTray.php';
-require_once __DIR__ . '/ListPage.php';
 
 class ListFactory extends Factory
 {
