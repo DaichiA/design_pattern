@@ -1,6 +1,9 @@
 <?php
 
 // Comopsiteパターンは容器と中身を同一視（= 複数と単数を同一視）し、再起的な構造を作るパターン。
+// Entryに定義されているprintList()では中でabstractメソッドのprintListPrefix()を呼んでいるが、
+// これによって同じ呼び出しのインターフェースから、FileとMyDirectoryそれぞれで実装しているconcreteメソッドを呼び分けることができる。
+// → どちらのオブジェクトでもprintList()を実行でき、その内部ではそれぞれのオブジェクト独自のメソッドが実行される。
 
 require_once __DIR__ . '/File.php';
 require_once __DIR__ . '/MyDirectory.php';
