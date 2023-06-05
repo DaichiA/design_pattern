@@ -19,13 +19,13 @@ class MessageBox implements Product
         for ($i = 0; $i < $length + 4; $i++) {
             echo $this->decochar;
         }
-        echo '<br>';
+        echo "\n";
         echo $this->decochar . ' ' . $s . ' ' . $this->decochar;
-        echo '<br>';
+        echo "\n";
         for ($i = 0; $i < $length + 4; $i++) {
             echo $this->decochar;
         }
-        echo '<br>';
+        echo "\n";
     }
 
     public function createCopy(): Product
