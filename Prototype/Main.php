@@ -12,8 +12,8 @@ class Main
 {
     public static function main(): void
     {
-        echo 'Start.' . '<br>';
-        echo '<br>';
+        echo 'Start.' . "\n";
+        echo "\n";
 
         $manager = new Manager();
         $upen    = new UnderlinePen('~');
@@ -25,17 +25,17 @@ class Main
 
         $p1 = $manager->create('strong message');
         $p1->use('Hello, world.');
-        echo '<br>';
+        echo "\n";
 
         $p2 = $manager->create('warning box');
         $p2->use('Hello, world.');
-        echo '<br>';
+        echo "\n";
 
         $p3 = $manager->create('slash box');
         $p3->use('Hello, world.');
-        echo '<br>';
+        echo "\n";
 
-        echo 'End.' . '<br>';
+        echo 'End.' . "\n";
     }
 }
 

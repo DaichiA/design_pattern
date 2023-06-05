@@ -16,12 +16,12 @@ class UnderlinePen implements Product
     public function use(string $s): void
     {
         $length = mb_strlen($s);
-        echo '"' . $s . '"' . '<br>';
+        echo '"' . $s . '"' . "\n";
         echo ' ';
         for ($i = 0; $i < $length; $i++) {
             echo $this->ulchar;
         }
-        echo '<br>';
+        echo "\n";
     }
 
     public function createCopy(): Product
