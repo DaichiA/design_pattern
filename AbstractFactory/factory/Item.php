@@ -10,9 +10,5 @@ abstract class Item
         $this->caption = $caption;
     }
 
-    public function getCaption(): string {
-        return $this->caption;
-    }
-
     public abstract function makeHTML(): string;
 }
